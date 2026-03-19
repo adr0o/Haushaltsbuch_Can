@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
+  <meta charset="UTF-8">
   <title>Haushaltsbuch</title>
-  <link rel="manifest" href="manifest.json">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#2196F3">
+  
+  <link rel="manifest" href="manifest.json">
+  
   <script>
-    // Leitet sofort zu deinem Google-Skript weiter
-    window.location.href = "https://script.google.com/macros/s/AKfycbxkRd5ISuc13UfgrTQh-wRSbRwnJ0eS1qTE0JYOCcQx5mJLSQlBV8optX3yop_oACuG/exec";
+    // WICHTIG: Wir warten 1 Sekunde, damit das Manifest geladen werden kann, 
+    // bevor wir zur Google-Tabelle weiterleiten.
+    setTimeout(function() {
+      window.location.href = "https://script.google.com/macros/s/AKfycbxkRd5ISuc13UfgrTQh-wRSbRwnJ0eS1qTE0JYOCcQx5mJLSQlBV8optX3yop_oACuG/exec";
+    }, 1000);
   </script>
 </head>
-<body>
-  <p style="text-align:center; margin-top:50px; font-family:sans-serif;">Lade Haushaltsbuch...</p>
+<body style="background:#2196F3; color:white; display:flex; justify-content:center; align-items:center; height:100vh; margin:0; font-family:sans-serif;">
+  <div style="text-align:center;">
+    <h2>Budget App wird geladen...</h2>
+  </div>
 </body>
 </html>
